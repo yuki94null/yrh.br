@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        " ": {
+            "trigger": "inventory_changed"
+        }
+    },
+    "rewards": {
+        "function": "yrh.br:player/inventory_changed"
+    }
+}

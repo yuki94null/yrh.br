@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        " ": {
+            "trigger": "using_item"
+        }
+    },
+    "rewards": {
+        "function": "yrh.br:player/item/using_item/root"
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "command_block",
+                    "modifier": [
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "item_name": {
+                                    "translate": "yrh.br.item.small_health.name",
+                                    "color": "aqua"
+                                },
+                                "lore": [
+                                    {
+                                        "translate": "yrh.br.item.using_item.lore",
+                                        "with": [
+                                            {
+                                                "keybind": "key.use"
+                                            }
+                                        ],
+                                        "color": "white",
+                                        "italic": false,
+                                        "bold": false
+                                    },
+                                    {
+                                        "translate": "yrh.br.item.small_health.lore",
+                                        "color": "white",
+                                        "italic": false,
+                                        "bold": false,
+                                        "with": [
+                                            {
+                                                "text": "25"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "item_model": "yrh.br:item/heal/small_health",
+                                "custom_model_data": {},
+                                "consumable": {
+                                    "consume_seconds": 1000000000000000000000000,
+                                    "animation": "crossbow",
+                                    "sound": "intentionally_empty",
+                                    "has_consume_particles": false
+                                },
+                                "food": {
+                                    "nutrition": 0,
+                                    "saturation": 0,
+                                    "can_always_eat": true
+                                },
+                                "custom_data": {
+                                    "yrhbr": {
+                                        "item": {
+                                            "id": "small_health",
+                                            "use_advancement": true
+                                        }
+                                    }
+                                },
+                                "use_effects": {
+                                    "can_sprint": false,
+                                    "interact_vibrations": true,
+                                    "speed_multiplier": 0.25
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

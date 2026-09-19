@@ -1,0 +1,75 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "player_head",
+                    "modifier": [
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "item_name": {
+                                    "text": "player head"
+                                },
+                                "lore": [
+                                    {
+                                        "translate": "yrh.br.ui.status_item.shield",
+                                        "with": [{"text": "none"},{"text": "none"}],
+                                        "color": "white",
+                                        "italic": false,
+                                        "bold": false
+                                    },
+                                    {
+                                        "translate": "yrh.br.ui.status_item.health",
+                                        "with": [{"text": "none"},{"text": "none"}],
+                                        "color": "white",
+                                        "italic": false,
+                                        "bold": false
+                                    }
+                                ],
+                                "item_model": "yrh.br:head",
+                                "custom_model_data": {
+                                    "floats": [
+                                        0.5,
+                                        0.75
+                                    ]
+                                },
+                                "profile": {
+                                    "name": ""
+                                },
+                                "tooltip_display": {
+                                    "hidden_components": [
+                                        "profile"
+                                    ]
+                                },
+                                "custom_data": {
+                                    "yrhbr": {
+                                        "item": {
+                                            "type": "player_head"
+                                        }
+                                    }
+                                },
+                                "attribute_modifiers": [
+                                    {
+                                        "id": "yrh.br:player_head",
+                                        "type": "block_interaction_range",
+                                        "amount": -1.0,
+                                        "display": {
+                                            "type": "hidden"
+                                        },
+                                        "operation": "add_multiplied_total",
+                                        "slot": "any"
+                                    }
+                                ],
+                                "max_stack_size": 1,
+                                "!minecraft:equippable": {}
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
