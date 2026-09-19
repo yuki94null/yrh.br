@@ -5,8 +5,8 @@
 #||        @yk.lib:find_aimtarget/.root
 #||
 #|| ------ End ------ ||#
-## 位置出す
 
+## 位置出す
 tag @s add yk.lib.find_aimtarget
 
 summon marker ~ ~ ~ {Tags:[yk.lib.find_aimtarget.marker,yk.lib.find_aimtarget]}

@@ -13,3 +13,5 @@
     function yrh.br:status/load
     
     function yrh.br:item/load
+
+    function yrh.br:ui/load

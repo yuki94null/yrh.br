@@ -2,8 +2,8 @@
 #|| @yk.lib:find_aimtarget/.root
 #||
 #|| ------ End ------ ||#
-## init
 
+## init
 tag @e remove yk.lib.find_aimtarget.min
 
 ## 対象を絞る (yk.lib.find_aimtarget.exceptionが付いたエンティティは除外される)
