@@ -5,4 +5,4 @@
 
     playsound entity.generic.drink
 
-    function yrh.br:player/status/each_heal with storage yrh.br:item config.large_shield
+    function yrh.br:player/status/each_heal with storage yrh.br:item config.item[{id:"large_shield"}]

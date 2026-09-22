@@ -55,7 +55,12 @@
                                     "yrhbr": {
                                         "item": {
                                             "id": "large_shield",
-                                            "use_advancement": true
+                                            "display_item": false,
+                                            "use_advancement": true,
+                                            "use_radial_menu": {
+                                                "enable": true,
+                                                "id": "heal"
+                                            }
                                         }
                                     }
                                 },
@@ -63,7 +68,8 @@
                                     "can_sprint": false,
                                     "interact_vibrations": true,
                                     "speed_multiplier": 0.25
-                                }
+                                },
+                                "max_stack_size": 2
                             }
                         }
                     ]

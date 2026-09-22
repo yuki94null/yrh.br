@@ -1,6 +1,9 @@
 #|| --- CrossRefs --- ||#
 #|| @yrh.br:player/item/using_item/reset_donot_elapse
 #||
+#||    # function
+#||        @yrh.br:player/tick
+#||
 #|| ------ End ------ ||#
 
 ## donot elapse

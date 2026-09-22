@@ -2,6 +2,7 @@
 #|| @yrh.br:player/status/each_heal
 #||
 #||    # function
+#||        @yrh.br:item/using_item/all_heal/use
 #||        @yrh.br:item/using_item/large_health/use
 #||        @yrh.br:item/using_item/large_shield/use
 #||        @yrh.br:item/using_item/small_health/use

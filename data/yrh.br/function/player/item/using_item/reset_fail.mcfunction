@@ -3,7 +3,6 @@
 #||
 #||    # function
 #||        @yrh.br:player/item/using_item/branch
-#||        @yrh.br:player/tick
 #||
 #|| ------ End ------ ||#
 

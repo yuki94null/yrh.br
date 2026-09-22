@@ -8,8 +8,7 @@
 #|| ------ End ------ ||#
 
 ## 初期化
-
-data modify storage yk.lib:global get_buildheight.Fishable set value 0n
+data modify storage yk.lib:global get_buildheight.Fishable set value 0b
 
 ## 釣りができたかを保存
 

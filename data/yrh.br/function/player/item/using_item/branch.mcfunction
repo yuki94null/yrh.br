@@ -48,7 +48,7 @@
             {type:"int_value_check", value:\
                 {type:"sub",\
                     left:{type:"storage",path:"tmp.player_data.elapsed_time",storage:"yrh.br:player"},\
-                    right:{type:"storage",path:"config.$(id).Time",storage:"yrh.br:item"}\
+                    right:{type:"storage",path:'config.item[{id:"$(id)"}].Time',storage:"yrh.br:item"}\
                 },\
             test:{min:1}\
             } \

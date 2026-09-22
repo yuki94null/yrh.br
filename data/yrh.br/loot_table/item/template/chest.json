@@ -12,7 +12,7 @@
                             "components": {
                                 "equippable": {
                                     "camera_overlay": "block/acacia_sign",
-                                    "slot": "chest"
+                                    "slot": "mainhand"
                                 }
                             }
                         }

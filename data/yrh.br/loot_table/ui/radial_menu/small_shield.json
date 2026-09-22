@@ -11,7 +11,7 @@
                             "type": "set_components",
                             "components": {
                                 "item_name": {
-                                    "translate": "yrh.br.item.large_health.name",
+                                    "translate": "yrh.br.item.small_shield.name",
                                     "color": "aqua"
                                 },
                                 "lore": [
@@ -27,18 +27,18 @@
                                         "bold": false
                                     },
                                     {
-                                        "translate": "yrh.br.item.large_health.lore",
+                                        "translate": "yrh.br.item.small_shield.lore",
                                         "color": "white",
                                         "italic": false,
                                         "bold": false,
                                         "with": [
                                             {
-                                                "text": "全"
+                                                "text": "25"
                                             }
                                         ]
                                     }
                                 ],
-                                "item_model": "yrh.br:item/heal/large_health",
+                                "item_model": "yrh.br:item/heal/small_shield",
                                 "custom_model_data": {},
                                 "consumable": {
                                     "consume_seconds": 1000000000000000000000000,
@@ -54,8 +54,8 @@
                                 "custom_data": {
                                     "yrhbr": {
                                         "item": {
-                                            "id": "large_health",
-                                            "display_item": false,
+                                            "id": "small_shield",
+                                            "display_item": true,
                                             "use_advancement": true,
                                             "use_radial_menu": {
                                                 "enable": true,
@@ -69,7 +69,7 @@
                                     "interact_vibrations": true,
                                     "speed_multiplier": 0.25
                                 },
-                                "max_stack_size": 2
+                                "max_stack_size": 4
                             }
                         }
                     ]

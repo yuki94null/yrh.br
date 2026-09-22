@@ -1,3 +1,10 @@
+#|| --- CrossRefs --- ||#
+#|| @yrh.br:player/ui/radial_menu/root
+#||
+#||    # function
+#||        @yrh.br:player/tick
+#||
+#|| ------ End ------ ||#
 
 ## タグ無し且inputがあれば始める
     execute \
@@ -9,4 +16,4 @@
 ## タグある且inputがなければやめる
     execute \
         if entity @s[tag=yrh.br.player.ui.radial_menu.input] run \
-            function yrh.br:player/ui/radial_menu/end
+            function yrh.br:player/ui/radial_menu/end with entity @s

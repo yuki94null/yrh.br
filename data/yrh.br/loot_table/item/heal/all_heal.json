@@ -55,6 +55,7 @@
                                     "yrhbr": {
                                         "item": {
                                             "id": "all_heal",
+                                            "display_item": false,
                                             "use_advancement": true,
                                             "use_radial_menu": {
                                                 "enable": true,
@@ -67,7 +68,8 @@
                                     "can_sprint": false,
                                     "interact_vibrations": true,
                                     "speed_multiplier": 0.25
-                                }
+                                },
+                                "max_stack_size": 1 
                             }
                         }
                     ]

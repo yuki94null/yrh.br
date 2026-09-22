@@ -55,7 +55,7 @@
                                     "yrhbr": {
                                         "item": {
                                             "id": "large_health",
-                                            "display_item": false,
+                                            "display_item": true,
                                             "use_advancement": true,
                                             "use_radial_menu": {
                                                 "enable": true,

@@ -55,7 +55,11 @@
                                     "yrhbr": {
                                         "item": {
                                             "id": "large_health",
-                                            "use_advancement": true
+                                            "use_advancement": true,
+                                            "use_radial_menu": {
+                                                "enable": true,
+                                                "id": "heal"
+                                            }
                                         }
                                     }
                                 },
