@@ -58,7 +58,7 @@
                                             "use_advancement": true,
                                             "use_radial_menu": {
                                                 "enable": true,
-                                                "id": "throwable"
+                                                "category": "throwable"
                                             }
                                         }
                                     }

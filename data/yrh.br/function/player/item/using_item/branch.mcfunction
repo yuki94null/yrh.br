@@ -40,7 +40,12 @@
     execute unless data storage yrh.br:player tmp{Success:0b} run return run function yrh.br:player/item/using_item/reset_fail with entity @s
 
 ## タイマー進める
-    data modify storage yrh.br:player tmp.player_data.elapsed_time set compute default integer {type:"add",inputs:[1, {type:"storage", path:'tmp.player_data.elapsed_time', storage:"yrh.br:player"}]}
+    data modify storage yrh.br:player tmp.player_data.elapsed_time set compute default integer \
+        {type:"add",inputs:[1, {type:"storage", path:'tmp.player_data.elapsed_time', storage:"yrh.br:player"}]}
+
+## 経過処理あるなら
+    $function yrh.br:item/using_item/$(category)/$(id)/while with storage yrh.br:player tmp
+    $function yrh.br:item/using_item/$(category)/while with storage yrh.br:player tmp
 
 ## マクロで飛ばしてアイテムの種類ごとに実行
     $execute \
@@ -53,4 +58,4 @@
             test:{min:1}\
             } \
         if function yrh.br:player/item/using_item/reset_default run \
-            function yrh.br:item/using_item/$(id)/use
+            function yrh.br:item/using_item/$(category)/$(id)/use with storage yrh.br:player tmp

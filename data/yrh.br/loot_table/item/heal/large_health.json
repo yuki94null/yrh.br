@@ -59,7 +59,7 @@
                                             "use_advancement": true,
                                             "use_radial_menu": {
                                                 "enable": true,
-                                                "id": "heal"
+                                                "category": "heal"
                                             }
                                         }
                                     }

@@ -2,11 +2,11 @@
 #|| @yrh.br:player/status/each_heal
 #||
 #||    # function
-#||        @yrh.br:item/using_item/all_heal/use
-#||        @yrh.br:item/using_item/large_health/use
-#||        @yrh.br:item/using_item/large_shield/use
-#||        @yrh.br:item/using_item/small_health/use
-#||        @yrh.br:item/using_item/small_shield/use
+#||        @yrh.br:item/using_item/heal/all_heal/use
+#||        @yrh.br:item/using_item/heal/large_health/use
+#||        @yrh.br:item/using_item/heal/large_shield/use
+#||        @yrh.br:item/using_item/heal/small_health/use
+#||        @yrh.br:item/using_item/heal/small_shield/use
 #||
 #|| ------ End ------ ||#
 

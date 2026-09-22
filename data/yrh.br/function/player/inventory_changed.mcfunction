@@ -9,6 +9,9 @@
 ## ad rv
     advancement revoke @s only yrh.br:inventory_changed
 
+## Radial Menuなどで使う個数を数えます
+    function yrh.br:player/item/count_item/root with entity @s
+
 ## シールドの値更新
     function yrh.br:player/item/equipment/armor/set_max_shield/root with entity @s
 

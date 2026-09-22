@@ -1,6 +1,9 @@
 #|| --- CrossRefs --- ||#
 #|| @yrh.br:player/item/using_item/reset_elapsed_time
 #||
+#||    # function
+#||        @yrh.br:item/using_item/heal/while
+#||
 #|| ------ End ------ ||#
 
 ## 経過時間を消す

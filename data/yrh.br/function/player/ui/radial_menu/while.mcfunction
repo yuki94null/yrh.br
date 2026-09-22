@@ -27,14 +27,20 @@
         tp @n[type=marker,tag=yrh.br.player.ui.radial_menu.tmp] ~ ~ ~
 
 ## idを移す
-    $data modify storage yrh.br:ui tmp.id set from storage yrh.br:ui player_data."$(UUID)".radial_menu.id
+    $data modify storage yrh.br:ui tmp.category set from storage yrh.br:ui player_data."$(UUID)".radial_menu.category
 
 ## どこ見てるか判定
     execute anchored eyes rotated as @n[type=marker,tag=yrh.br.player.ui.radial_menu.tmp] positioned ^ ^ ^2.0 run \
         function yrh.br:player/ui/radial_menu/set_markers/root with storage yrh.br:ui tmp
 
+## resultからidに変換
+    function yrh.br:player/ui/radial_menu/to_id with storage yrh.br:ui tmp
+
 ## 結果を入れる
-    $data modify storage yrh.br:ui player_data."$(UUID)".result set from storage yrh.br:ui tmp.Result
+    $data modify storage yrh.br:ui player_data."$(UUID)".radial_menu.hand set from storage yrh.br:ui tmp.hand
+    $data modify storage yrh.br:ui player_data."$(UUID)".radial_menu.category set from storage yrh.br:ui tmp.category
+    $data modify storage yrh.br:ui player_data."$(UUID)".radial_menu.id set from storage yrh.br:ui tmp.id
+    $data modify storage yrh.br:ui player_data."$(UUID)".radial_menu.result set from storage yrh.br:ui tmp.result
 
 ## タグ消す
     tag @n[type=marker,tag=yrh.br.player.ui.radial_menu.tmp] remove yrh.br.player.ui.radial_menu.tmp

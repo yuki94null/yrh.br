@@ -11,15 +11,52 @@
                             "type": "set_components",
                             "components": {
                                 "item_name": {
-                                    "translate": "yrh.br.item.large_health.name",
-                                    "color": "aqua"
+                                    "translate": "yrh.br.ui.radial_menu.name",
+                                    "color": "gold",
+                                    "italic": false,
+                                    "bold": false,
+                                    "extra": [
+                                        {
+                                            "text": "【",
+                                            "color": "aqua",
+                                            "italic": false,
+                                            "bold": false
+                                        },
+                                        {
+                                            "translate": "yrh.br.item.large_shield.name",
+                                            "color": "aqua",
+                                            "italic": false,
+                                            "bold": false
+                                        },
+                                        {
+                                            "text": "】",
+                                            "color": "aqua",
+                                            "italic": false,
+                                            "bold": false
+                                        }
+                                    ]
                                 },
                                 "lore": [
+                                    {
+                                        "translate": "yrh.br.ui.radial_menu.lore",
+                                        "with": [
+                                            {
+                                                "keybind": "key.sprint",
+                                                "italic": false,
+                                                "bold": false
+                                            }
+                                        ],
+                                        "color": "gold",
+                                        "italic": false,
+                                        "bold": false
+                                    },
                                     {
                                         "translate": "yrh.br.item.using_item.lore",
                                         "with": [
                                             {
-                                                "keybind": "key.use"
+                                                "keybind": "key.use",
+                                                "italic": false,
+                                                "bold": false
                                             }
                                         ],
                                         "color": "white",
@@ -27,18 +64,20 @@
                                         "bold": false
                                     },
                                     {
-                                        "translate": "yrh.br.item.large_health.lore",
+                                        "translate": "yrh.br.item.large_shield.lore",
                                         "color": "white",
                                         "italic": false,
                                         "bold": false,
                                         "with": [
                                             {
-                                                "text": "全"
+                                                "text": "全",
+                                                "italic": false,
+                                                "bold": false
                                             }
                                         ]
                                     }
                                 ],
-                                "item_model": "yrh.br:item/heal/large_health",
+                                "item_model": "yrh.br:item/heal/large_shield",
                                 "custom_model_data": {},
                                 "consumable": {
                                     "consume_seconds": 1000000000000000000000000,
@@ -54,12 +93,12 @@
                                 "custom_data": {
                                     "yrhbr": {
                                         "item": {
-                                            "id": "large_health",
+                                            "id": "large_shield",
                                             "display_item": true,
                                             "use_advancement": true,
                                             "use_radial_menu": {
                                                 "enable": true,
-                                                "id": "heal"
+                                                "category": "heal"
                                             }
                                         }
                                     }
@@ -69,7 +108,7 @@
                                     "interact_vibrations": true,
                                     "speed_multiplier": 0.25
                                 },
-                                "max_stack_size": 2
+                                "max_stack_size": 1
                             }
                         }
                     ]

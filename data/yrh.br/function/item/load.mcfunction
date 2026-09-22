@@ -10,14 +10,19 @@
     data remove storage yrh.br:item config
 
 ## item
+#   要件:
+#       id: アイテムカウントをここのデータから取得する
+#       Time: using_itemの処理を行うまでの時間(tick)
+#       Shield / Health: 回復アイテムの回復量
+##
     ### heal
         data modify storage yrh.br:item config.item set value \
         [\
-            {id:small_health,Time:120, Shield:0b, Health:25b},\
-            {id:small_shield,Time:60, Shield:25b, Health:0b},\
-            {id:large_health,Time:240, Shield:0b, Health:100b},\
-            {id:large_shield,Time:120, Shield:100b, Health:0b},\
-            {id:all_heal,Time:300, Shield:100b, Health:100b}\
+            {category:"heal",id:small_health,Time:120, Shield:0b, Health:25b},\
+            {category:"heal",id:small_shield,Time:60, Shield:25b, Health:0b},\
+            {category:"heal",id:large_health,Time:240, Shield:0b, Health:100b},\
+            {category:"heal",id:large_shield,Time:120, Shield:100b, Health:0b},\
+            {category:"heal",id:all_heal,Time:300, Shield:100b, Health:100b}\
         ]
 
         # #### small health

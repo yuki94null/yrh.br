@@ -7,7 +7,7 @@
 #|| ------ End ------ ||#
 
 ## 個人データを移す
-    $data modify storage yrh.br:player tmp.player_data set from storage yrh.br:player player_data."$(UUID)"
+    $data modify storage yrh.br:player tmp.player_data set from storage yrh.br:player player_data."$(UUID)".using_item
 
 ## アイテムデータを格納しておく
     ### アイテムデータを格納するようチェスト
@@ -21,6 +21,9 @@
 
     ### つかうID
         data modify storage yrh.br:player tmp.id set from storage yrh.br:player tmp.player_data.current_item.components."minecraft:custom_data".yrhbr.item.id
+
+    ### category
+        function yrh.br:player/item/using_item/get_category with storage yrh.br:player tmp
 
     ### キル
         kill @e[tag=yrh.br.player.item.using_item.tmp_chest]

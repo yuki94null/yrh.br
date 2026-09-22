@@ -10,13 +10,21 @@
     data remove storage yrh.br:ui config
 
 ## radial menu
+#   要件: 
+#       config.radial_menu.category[].id
+#           category: 同じメニューに表示する際ための
+#           []: メニューのセレクション
+#           id: lootで参照するアイテムid
+#
+#       cancel: 中央にキャンセル択を置くかどうか
+##
     ### heal
         data modify storage yrh.br:ui config.radial_menu.heal set value \
             {\
                 cancel: true,\
                 contents:\
                     [\
-                        {id:"yrh.br:all_heal"},{id:"yrh.br:small_health"},{id:"yrh.br:large_health"},{id:"yrh.br:small_shield"},{id:"yrh.br:large_shield"}\
+                        {id:"all_heal"},{id:"small_health"},{id:"large_health"},{id:"large_shield"},{id:"small_shield"}\
                 ]\
             }
 
@@ -25,6 +33,6 @@
             {\
                 contents:\
                     [\
-                        {id:"yrh.br:all_heal"},{id:"yrh.br:small_health"},{id:"yrh.br:large_health"},{id:"yrh.br:large_health"}\
+                        {id:"all_heal"},{id:"small_health"},{id:"large_health"},{id:"large_health"}\
                 ]\
             }

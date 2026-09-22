@@ -18,4 +18,5 @@
     function yrh.br:player/ui/radial_menu/set_markers/mcr with storage yrh.br:ui tmp
 
 ## Index 0 まで再帰
-    execute if predicate {type:"int_value_check",value:{type:"storage",path:"tmp.Index",storage:"yrh.br:ui"},test:{min:1}} run function yrh.br:player/ui/radial_menu/set_markers/loop with storage yrh.br:ui tmp
+    execute if predicate {type:"int_value_check",value:{type:"storage",path:"tmp.Index",storage:"yrh.br:ui"},test:{min:1}} run \
+        function yrh.br:player/ui/radial_menu/set_markers/loop with storage yrh.br:ui tmp

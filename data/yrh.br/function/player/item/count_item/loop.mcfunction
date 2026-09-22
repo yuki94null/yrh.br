@@ -9,7 +9,6 @@
 
 ## Index減らす
     data modify storage yrh.br:player tmp.Index set compute default integer {type:"sub",left:{type:"storage",path:"tmp.Index",storage:"yrh.br:player"},right:1}
-tellraw @a [{nbt:"tmp.Index",storage:"yrh.br:player"}]
 
 ## id get
     function yrh.br:player/item/count_item/get_id with storage yrh.br:player tmp

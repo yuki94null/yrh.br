@@ -1,9 +1,11 @@
 #|| --- CrossRefs --- ||#
 #|| @yrh.br:player/item/count_item/root
 #||
+#||    # function
+#||        @yrh.br:player/inventory_changed
+#||
 #|| ------ End ------ ||#
 
-say root
 ## init
     data remove storage yrh.br:player tmp
 

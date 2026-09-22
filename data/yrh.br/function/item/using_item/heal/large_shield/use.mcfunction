@@ -1,0 +1,8 @@
+#|| --- CrossRefs --- ||#
+#|| @yrh.br:item/using_item/heal/large_shield/use
+#||
+#|| ------ End ------ ||#
+
+    playsound entity.generic.drink
+## 回復の汎用処理
+    function yrh.br:item/using_item/heal/use with storage yrh.br:player tmp
