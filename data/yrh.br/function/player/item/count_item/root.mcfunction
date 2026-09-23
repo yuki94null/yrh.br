@@ -13,7 +13,7 @@
     data modify storage yrh.br:player tmp.UUID set from entity @s UUID
 
 ## 要素数を取得
-    execute store result storage yrh.br:player tmp.Index int 1.0 run data get storage yrh.br:item config.item
+    execute store result storage yrh.br:player tmp.index int 1.0 run data get storage yrh.br:item config.item
 
 ## データの要素数でループ
     function yrh.br:player/item/count_item/loop

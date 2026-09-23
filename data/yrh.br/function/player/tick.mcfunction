@@ -6,6 +6,9 @@
 #||
 #|| ------ End ------ ||#
 
+## 初回登録
+    execute if entity @s[tag=!yrh.br.player.registered] run function yrh.br:system/register_player/root
+
 ## 使ったティックじゃないのに残ってたら時間をリセット(UIで使うかもしれない用)
     execute if entity @s[tag=yrh.br.item.using_item,tag=!yrh.br.item.using_item.this_tick] run function yrh.br:player/item/using_item/reset_donot_elapse with entity @s
 
@@ -17,5 +20,3 @@
 
 ## 使ってたティックは終わり
     tag @s remove yrh.br.item.using_item.this_tick
-
-execute if score @s yrh.br.leave matches 1.. run function yrh.br:player/leave_game

@@ -7,4 +7,4 @@
 #|| ------ End ------ ||#
 
 ## playerのio
-    function yrh.br:game/io/root
+    function yrh.br:game/lobby/io/root

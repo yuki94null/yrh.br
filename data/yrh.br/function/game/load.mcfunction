@@ -18,9 +18,9 @@
     data modify storage yrh.br:game config.OverFlowSpectators set value 1b
 
 ## チームの雛形
-    data modify storage yrh.br:game config.squad_template.trio set value {members:[],alive_count:3,team_alive:true}
-    data modify storage yrh.br:game config.squad_template.duo set value {members:[],alive_count:2,team_alive:true}
-    data modify storage yrh.br:game config.squad_template.solo set value {members:[],alive_count:1,team_alive:true}
+    data modify storage yrh.br:game config.squad_template.trio set value {index:0,members:[],alive_count:3,squad_alive:1b}
+     data modify storage yrh.br:game config.squad_template.duo set value {index:0,members:[],alive_count:2,squad_alive:1b}
+    data modify storage yrh.br:game config.squad_template.solo set value {index:0,members:[],alive_count:1,squad_alive:1b}
 
 ## デフォルト設定
     data modify storage yrh.br:game current_game set value {mode:"trio"}

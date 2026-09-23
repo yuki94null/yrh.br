@@ -18,8 +18,8 @@
                                 "custom_data": {
                                     "yrhbr": {
                                         "item": {
-                                            "ArmorLevel": 3,
-                                            "Shield": 75
+                                            "armor_level": 3,
+                                            "shield": 75
                                         }
                                     }
                                 }

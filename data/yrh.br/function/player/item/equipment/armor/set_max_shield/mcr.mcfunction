@@ -7,4 +7,4 @@
 #|| ------ End ------ ||#
 
 ## リストのインデックスとしてレベルを扱っているのでそれで指定していれる
-    $data modify storage yrh.br:status player_data."$(UUID)".MaxShield set from storage yrh.br:item config.armor[$(ArmorLevel)]
+    $data modify storage yrh.br:status player_data."$(UUID)".max_shield set from storage yrh.br:item config.armor[$(armor_level)]

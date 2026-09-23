@@ -1,0 +1,6 @@
+{
+    "values": [
+        {"id": "player","required": false},
+        {"id": "mannequin","required": false}
+    ]
+}

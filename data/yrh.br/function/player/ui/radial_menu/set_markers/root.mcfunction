@@ -8,11 +8,11 @@
 
 ## 個数を保存
     $execute \
-        store result storage yrh.br:ui tmp.Index int 1.0 run \
+        store result storage yrh.br:ui tmp.index int 1.0 run \
             data get storage yrh.br:ui config.radial_menu.$(category).contents
 
 ## 単位角度の計算
-    data modify storage yrh.br:ui tmp.angle set compute default float {type:"div",left:360.0,right:{type:"storage",path:"tmp.Index",storage:"yrh.br:ui"}}
+    data modify storage yrh.br:ui tmp.angle set compute default float {type:"div",left:360.0,right:{type:"storage",path:"tmp.index",storage:"yrh.br:ui"}}
 
 ## cancelを召喚する
     $execute if data storage yrh.br:ui config.radial_menu.$(category){cancel:true} run \
@@ -23,7 +23,7 @@
 
 ## 選んだやつを格納
     execute rotated as @s positioned ^ ^ ^2.0 run \
-        data modify storage yrh.br:ui tmp.result set from entity @n[type=marker,tag=yrh.br.player.ui.radial_menu.options] data.yrhbr.radial_menu.Index
+        data modify storage yrh.br:ui tmp.result set from entity @n[type=marker,tag=yrh.br.player.ui.radial_menu.options] data.yrhbr.radial_menu.index
 
 ## 見てるやつ
     execute rotated as @s positioned ^ ^ ^2.0 at @n[type=marker,tag=yrh.br.player.ui.radial_menu.options] run particle electric_spark

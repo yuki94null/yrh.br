@@ -7,4 +7,4 @@
 #|| ------ End ------ ||#
 
 ## あらかじめ作っているデータからidを取得
-    $data modify storage yrh.br:player tmp.id set from storage yrh.br:item config.item[$(Index)].id
+    $data modify storage yrh.br:player tmp.id set from storage yrh.br:item config.item[$(index)].id
