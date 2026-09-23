@@ -41,3 +41,6 @@
 
 ## シールド更新
     $function yrh.br:player/item/equipment/armor/update_armor/root with storage yrh.br:status player_data."$(UUID)"
+
+## status更新の共通処理
+    function yrh.br:player/status/status_changed/root

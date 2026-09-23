@@ -25,3 +25,6 @@
                 }\
             ]\
         }
+
+## status更新の共通処理
+    function yrh.br:player/status/status_changed/root

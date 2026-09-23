@@ -3,6 +3,7 @@
 #||
 #||    # function
 #||        @yrh.br:game/start/create_squad/get_uuid_from_list
+#||        @yrh.br:player/ui/status_item/root
 #||
 #|| ------ End ------ ||#
 

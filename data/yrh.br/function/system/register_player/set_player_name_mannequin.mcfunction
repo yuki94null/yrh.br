@@ -2,7 +2,7 @@
 #|| @yrh.br:system/register_player/set_player_name_mannequin
 #||
 #||    # function
-#||        @yrh.br:system/register_player/root
+#||        @yrh.br:player/init/root
 #||
 #|| ------ End ------ ||#
 

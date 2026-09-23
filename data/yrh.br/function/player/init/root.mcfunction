@@ -2,6 +2,7 @@
 #|| @yrh.br:player/init/root
 #||
 #||    # function
+#||        @yrh.br:debug/debug_player/init
 #||        @yrh.br:system/register_player/root
 #||
 #|| ------ End ------ ||#
