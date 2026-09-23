@@ -74,3 +74,83 @@ purple bkpk 16
 [-] 魔法全般
 [-] テクスチャ
 [-] ステータスヘッドの構造をもっと練る
+
+## 実装したもの
+
+player:
+    state:
+        alive:
+            生きている状態
+            普段はこれ
+        down:
+            aliveのときにhealthを0にされると遷移する
+            パーティメンバーによるその場での蘇生が有効(未実装)
+        dead:
+            downのときにhealthを0にされると遷移する
+            プレイヤーがパーティに属しているときは、
+            自身のパーティのみ観戦が可能
+
+    item:
+        using_item:
+            アイテムを使う汎用処理
+            `yrh.br:item config.using_item` で設定したデータをもとに、長押しによる使用が可能
+            使用時のtickの処理も個別に設定可能
+            
+        
+game:
+    squad:
+        いわゆるパーティ
+        trio, duo, soloがある
+        create_squadsによって自動で作成できる
+
+    lobby:
+        join / leave, queue / dequeueがある
+        join しているプレイヤーが全員 queued のときにのみ試合を始められる
+
+status:
+    health:
+        ヘルス
+        これがなくなるとaliveならdown、downならdeadへと遷移する
+        設計として、回復には大きめのコストが必要
+
+    shield:
+        シールド
+        例外を除き、基本的なダメージはこのシールドが先に受けることになり、
+        なくなるとヘルスで受けることになる
+        設計として、回復には小さめのコストが必要
+
+    汎用機能:
+        - add health:
+            ヘルスを与える
+        - add shield:
+            シールドを与える
+        - take damage:
+            ダメージを与える
+
+ui:
+    radial_menu:
+        アイテムに設定されたid,そのidによるストレージのデータをもとに、radial menuを生成する
+        当該アイテムを持って Ctrl でメニューを開く
+        UIはまだない
+        処理の可視化用のパーティクルがある(コメントアウトする予定)
+    status_item:
+        プレイヤーのヘルスデータを視覚的に描画する
+        パーティメンバーのものも表示する予定
+        containerにシフトで入れると残ってしまうバグがあるため、
+        修正の見込みがないのであれば
+        フィールドにcontainerを残さないような設計にするかこれの描画を用いないかのいずれかの方法を取る必要がある
+        (修正案: inventory_changed 時に該当プレイヤーからレイキャスト、containerなら消す
+         懸念点: 負荷、container itemの不具合)
+
+debug:
+    debug_player:
+        ジョイン可能なマネキン
+        squadの処理のデバッグに大いに活躍中
+        一斉にjoin queueなどができる
+
+    display_status:
+        action barにステータスなどを表示する
+
+    give_~:
+        それぞれ系アイテムを与える
+        lootから
