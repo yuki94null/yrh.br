@@ -58,7 +58,7 @@
                                             "display_item": false,
                                             "use_advancement": true,
                                             "use_radial_menu": {
-                                                "enable": true,
+                                                "enable": false,
                                                 "category": "heal"
                                             }
                                         }

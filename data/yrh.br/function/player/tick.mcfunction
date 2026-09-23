@@ -17,3 +17,5 @@
 
 ## 使ってたティックは終わり
     tag @s remove yrh.br.item.using_item.this_tick
+
+execute if score @s yrh.br.leave matches 1.. run function yrh.br:player/leave_game
