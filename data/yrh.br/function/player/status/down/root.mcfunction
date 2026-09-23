@@ -14,6 +14,9 @@
     data remove storage yrh.br:player tmp.state
     $data modify storage yrh.br:player tmp.state set from storage yrh.br:status player_data."$(UUID)".state
 
+## 死んでたら何もしない
+    execute if data storage yrh.br:player tmp{state:"dead"} run return fail
+
 ## すでにダウンしてたらdead
     execute if data storage yrh.br:player tmp{state:"down"} run return run function yrh.br:player/status/dead/root with storage yrh.br:player tmp
 

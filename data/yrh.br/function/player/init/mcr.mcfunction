@@ -11,3 +11,4 @@
         {health:100b,shield:0b,max_shield:0b,armor_level:0b,state:"alive"}
     $data modify storage yrh.br:player player_data."$(UUID)" set value \
         {in_squads:0b}
+    

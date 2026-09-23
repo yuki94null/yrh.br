@@ -11,7 +11,8 @@
     $execute if data storage yrh.br:player tmp{state:"alive"} run data modify storage yrh.br:game squads[$(squad_index)].alive_count set compute default integer {type:"sub",left:{type:"storage",path:"squads[$(squad_index)].alive_count", storage:"yrh.br:game"},right:1}
 
 ## squadが死んでたら切る
-    $execute unless data storage yrh.br:game yrh.br:game squads[$(squad_index)]{squad_alive:1b} run return fail
+    $data modify storage yrh.br:player tmp.squad_alive set from storage yrh.br:game squads[$(squad_index)].squad_alive
+    execute unless data storage yrh.br:player tmp{squad_alive:1b} run return fail
 
 ## squad alive check
     function yrh.br:game/squad/check_squad_alive/root with storage yrh.br:player tmp

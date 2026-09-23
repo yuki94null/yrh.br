@@ -16,7 +16,7 @@
 
 ## 人数を取得
     data remove storage yrh.br:game tmp.index
-    $execute store result storage yrh.br:game tmp.index int 1.0 run data get storage yrh.br:game squads[$(squad_index)].members 1.0
+    $execute store result storage yrh.br:game tmp.index int 1.0 run data get storage yrh.br:game squads[$(squad_index)].members
     data modify storage yrh.br:game tmp.index set compute default integer {type:"sub", left:{type:"storage",path:"tmp.index",storage:"yrh.br:game"},right:1}
 
 ## squadを殺す

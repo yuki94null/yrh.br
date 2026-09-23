@@ -8,5 +8,5 @@
 #|| ------ End ------ ||#
 
 ## 取得
-    data modify storage yrh.br:player tmp.squad_index set value none
+    data remove storage yrh.br:player tmp.squad_index
     $data modify storage yrh.br:player tmp.squad_index set from storage yrh.br:game player_data."$(UUID)".squad_index
