@@ -3,6 +3,7 @@
 #||
 #||    # function
 #||        @yrh.br:player/status/add_shield/root
+#||        @yrh.br:player/status/set_shield/root
 #||        @yrh.br:player/status/take_damage/root
 #||
 #|| ------ End ------ ||#

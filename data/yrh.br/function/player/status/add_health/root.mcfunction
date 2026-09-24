@@ -2,7 +2,6 @@
 #|| @yrh.br:player/status/add_health/root
 #||
 #||    # function
-#||        @yrh.br:player/status/down/add_down_health
 #||        @yrh.br:player/status/each_heal
 #||
 #|| ------ End ------ ||#

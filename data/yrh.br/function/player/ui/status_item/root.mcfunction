@@ -4,7 +4,6 @@
 #||    # function
 #||        @yrh.br:player/inventory_changed
 #||        @yrh.br:player/status/status_changed/root
-#||        @yrh.br:player/tick
 #||
 #|| ------ End ------ ||#
 

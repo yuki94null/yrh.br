@@ -15,5 +15,7 @@
 ## ステータスの最大値
     data modify storage yrh.br:status config.health set value 100b
 
-## ステータスの最大値
+## 状態遷移時のヘルス
     data modify storage yrh.br:status config.down_health set value 100b
+    data modify storage yrh.br:status config.revive_health set value 25b
+    data modify storage yrh.br:status config.respawn_health set value 100b

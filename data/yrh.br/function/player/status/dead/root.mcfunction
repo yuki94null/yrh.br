@@ -15,6 +15,12 @@
     data remove storage yrh.br:player tmp.state
     $data modify storage yrh.br:player tmp.state set from storage yrh.br:status player_data."$(UUID)".state
 
+## tag外す
+    tag @s remove yrh.br.player.status.state.down
+
+## tagつける
+    tag @s add yrh.br.player.status.state.dead
+
 ## deadに設定
     $data modify storage yrh.br:status player_data."$(UUID)".state set from storage yrh.br:status config.state[2]
 

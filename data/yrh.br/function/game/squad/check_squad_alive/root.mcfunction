@@ -4,6 +4,8 @@
 #||    # function
 #||        @yrh.br:player/status/dead/in_squad
 #||        @yrh.br:player/status/down/in_squad
+#||        @yrh.br:player/status/respawn/in_squad
+#||        @yrh.br:player/status/revive/in_squad
 #||
 #|| ------ End ------ ||#
 

@@ -4,6 +4,8 @@
 #||    # function
 #||        @yrh.br:player/status/dead/root
 #||        @yrh.br:player/status/down/root
+#||        @yrh.br:player/status/respawn/root
+#||        @yrh.br:player/status/revive/root
 #||
 #|| ------ End ------ ||#
 

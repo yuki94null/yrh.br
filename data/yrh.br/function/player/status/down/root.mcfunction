@@ -20,11 +20,14 @@
 ## すでにダウンしてたらdead
     execute if data storage yrh.br:player tmp{state:"down"} run return run function yrh.br:player/status/dead/root with storage yrh.br:player tmp
 
+## tagつける
+    tag @s add yrh.br.player.status.state.down
+
 ## downに設定
     $data modify storage yrh.br:status player_data."$(UUID)".state set from storage yrh.br:status config.state[1]
 
 ## ダウン体のヘルスを設定
-    function yrh.br:player/status/down/add_down_health
+    function yrh.br:player/status/down/set_down_health
 
 ## スクアッドに入ってなければ終わり
     $execute if data storage yrh.br:player player_data."$(UUID)"{in_squads:0b} run return fail
